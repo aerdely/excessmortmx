@@ -4,7 +4,7 @@
 ## Load data and auxiliary functions
 
 begin    
-    include("auxfunctions.jl")
+    include("0auxfunctions.jl")
     println("*** Extracting data and estimating models...")
     leer_dfs(collect(1998:2022))
 end
