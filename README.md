@@ -15,7 +15,7 @@
    readdir()
    ```
 4. Download the code files clicking in the green button `<> Code` of this GitHub repository and `DownloadZIP`. Unzip the downloaded file and move the following files into the same working directory as the downloaded data in the previous step: `1packages.jl`, `2deaths.jl`, `3population.jl`, `4figures.jl`, `5tables.jl`, and `6other.jl`
-5. Install the required packages by executing in the `Julia` terminal. This may take a while:
+5. Install the required packages by executing the following command in the `Julia` terminal. This may take a while:
    ```julia
    include("1packages.jl")
    ```
