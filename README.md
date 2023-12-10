@@ -13,7 +13,7 @@
    path = "D:/MyFiles/rawdata2022mx"
    cd(path)
    ```
-4. Download the code files and put them into the same working directory. All the files (data and code) must be in the same folder.  
+4. Download the code files clicking in the green button `<> Code` of this GitHub repository and `DownloadZIP`. Unzip the downloaded code files and put them into the same working directory as the downloaded data. All the files (data and code) must be in the same folder.  
 5. Install the required packages by executing in the `Julia` terminal:
    ```julia
    include("1packages.jl")
