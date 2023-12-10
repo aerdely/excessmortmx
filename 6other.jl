@@ -1,4 +1,4 @@
-### Supplementary material
+### Supplementary material (inmediately after executing 5tables.jl)
 
 println("*** Supplementary material ***")
 
