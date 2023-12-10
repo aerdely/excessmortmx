@@ -8,10 +8,46 @@
 
 1. Download and install the [Julia](https://julialang.org/downloads/) programming language.
 2. Download and unzip the data from the following Google Drive [link](https://drive.google.com/file/d/19_1QOiKbkGlcN2Chr-xbh2pMxVxyKgwu/view?usp=drive_link) in a working directory of your election.
-3. Open the `Julia` terminal and change to the working directory where you unzipped the files. You may do this defining a string variable `path` with the path to the files directory and then execute in the terminal `cd(path)`. For example, in Windows it may look somthing like:
+3. Open the `Julia` terminal and change to the working directory where you unzipped the files. You may do this by defining a string variable `path` with the path to the files directory and then execute in the terminal `cd(path)`. For example, in the operating system *Windows* it may look somthing like:
    ```julia
    path = "D:/MyFiles/rawdata2022mx"
    cd(path)
    ```
-4. Download the code files and put them into the same working directory. All the files (data and code must be in the same folder).  
-5. Install required packages by executing in the terminal: `include("")`
+4. Download the code files and put them into the same working directory. All the files (data and code) must be in the same folder.  
+5. Install the required packages by executing in the terminal:
+   ```julia
+   include("1packages.jl")
+   ```
+6. Process deaths data. This will take several hours (4 approx) and will generate several new `.csv` data files:
+   ```julia
+   include("2deaths.jl")
+   ```
+7. Process population data. This is quite fast and will generate several new `.csv` data files:
+   ```julia
+   include("3population.jl")
+   ```
+8. Create 4 figures as `.png` image files:
+   ```julia
+   include("4figures.jl")
+   ```
+   - `Figure1.png`: % of non-illnes deaths & observed illness-related deaths 1998-2019
+   - `Figure2.png`: illness-related excess mortality 2020 | 2021 | 2022
+   - `Figure3.png`: % illness-related excess of mortality 2020-2022 males vs females
+   - `Figure4.png`: illness-related excess mortality 2020-2022 by sex and age groups
+9. Create 6 tables in `.csv` file format: 
+   ```julia
+   include("5tables.jl")
+   ```
+   - `Table1.csv`: Excess mortality in Mexico 2020
+   - `Table2.csv`: Excess mortality in Mexico 2021
+   - `Table3.csv`: Excess mortality in Mexico 2022
+   - `Table4.csv`: Excess mortality in Mexico 2020-2022
+   - `Table5.csv`: Excess mortality in Mexico 2020-2022 (males)
+   - `Table6.csv`: Excess mortality in Mexico 2020-2022 (females)
+10. Generate supplementary figures and calculations:
+    ```julia
+    include("6other.jl")
+    ```
+    - `FigureExtra1.png`: illness-related deaths evolution of fitted parameters
+    - `FigureExtra2.png`: adjusted R-squared and Anderson-Darling test for normality of residuals
+    - `FigureExtra3.png`: some examples of the fitted model
