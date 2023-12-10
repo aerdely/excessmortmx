@@ -129,7 +129,7 @@ end
 
 
 #=
-    Figure 3: % illness excess of mortality 2020-2022 males vs females
+    Figure 3: % illness-related excess of mortality 2020-2022 males vs females
 =#
 let 
     h = EnfHomtodos_modelo 
@@ -150,7 +150,7 @@ end
 
 
 #=
-    Figure 4: illness.related xxcess mortality 2020-2022 by sex and age groups
+    Figure 4: illness-related excess mortality 2020-2022 by sex and age groups
 =#
 begin 
     e = ["0-5", "6-10", "11-19", "20-29", "30-39", "40-49", "50-59", "60-69", "70+", "all"]
