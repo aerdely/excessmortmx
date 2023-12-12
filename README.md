@@ -2,7 +2,7 @@
 
 > Authors: Andreu Comas-García & Arturo Erdely
 
-> Preprint: [arXiv](https://arxiv.org/abs/2311.15483v2)
+> Preprint: [arXiv](https://arxiv.org/pdf/2311.15483v2.pdf)
 
 ### Instructions for reproducibility
 
